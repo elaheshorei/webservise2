@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    background: #ffffffdd;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.country-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+    width: calc(50% - 20px);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.country-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.country-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.country-details {
+    font-size: 14px;
+    color: #666;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #fda085;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.countries-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
